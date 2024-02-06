@@ -4,9 +4,8 @@ import com.nemnous.proto.Employee;
 import com.nemnous.proto.EmployeeServiceGrpc;
 import com.nemnous.proto.GetEmployeeByIdRequest;
 import io.grpc.stub.StreamObserver;
-import org.lognet.springboot.grpc.GRpcService;
-
-@GRpcService
+import net.devh.boot.grpc.server.service.GrpcService;
+@GrpcService
 public class EmployeeServiceImpl extends EmployeeServiceGrpc.EmployeeServiceImplBase {
 
     @Override

@@ -1,7 +1,7 @@
 package com.nemnous.client.service;
 
-import com.nemnous.proto.Employee;
+import com.nemnous.client.dto.EmployeeDto;
 
 public interface EmployeeClientService {
-    Employee getEmployeeById(Integer employeeId);
+    EmployeeDto getEmployeeById(Integer employeeId);
 }

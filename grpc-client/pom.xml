@@ -18,6 +18,9 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <io-grpc.version>1.58.1</io-grpc.version>
+        <grpc-starter.version>2.15.0.RELEASE</grpc-starter.version>
+        <grpc-central-proto.version>1.0-SNAPSHOT</grpc-central-proto.version>
     </properties>
 
     <dependencies>
@@ -37,23 +40,37 @@
             <scope>test</scope>
         </dependency>
 
+
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-netty</artifactId>
-            <version>1.16.1</version>
+            <version>${io-grpc.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>io.github.lognet</groupId>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty-shaded</artifactId>
+            <version>${io-grpc.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-core</artifactId>
+            <version>${io-grpc.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.devh</groupId>
             <artifactId>grpc-spring-boot-starter</artifactId>
-            <version>5.1.5</version>
+            <version>${grpc-starter.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.nemnous</groupId>
             <artifactId>grpc-central-proto</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${grpc-central-proto.version}</version>
         </dependency>
+
     </dependencies>
 
     <build>
