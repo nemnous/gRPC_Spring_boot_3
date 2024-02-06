@@ -21,6 +21,7 @@
         <io-grpc.version>1.58.1</io-grpc.version>
         <grpc-starter.version>2.15.0.RELEASE</grpc-starter.version>
         <grpc-central-proto.version>1.0-SNAPSHOT</grpc-central-proto.version>
+        <log4j2.version>2.22.1</log4j2.version>
     </properties>
 
     <dependencies>
@@ -40,6 +41,10 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>io.grpc</groupId>
